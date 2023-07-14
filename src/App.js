@@ -8,6 +8,7 @@ import About from './component/About';
 import Contact from './component/Contact';
 import Login from './component/login';
 import Register from './component/Register';
+import Cart from './component/Cart';
 
 
 function App() {
@@ -20,11 +21,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/> }/> 
         <Route path="/products" Component={Products} />
-        <Route path="/products/:id" element={Product} />
+        <Route path="/products/:id" Component={Product} />
         <Route path="/about" Component={About} />
         <Route path="/contact" Component={Contact} />
         <Route path="/login" Component={Login} />
         <Route path="/register" Component={Register} />
+        <Route path="/cart" Component={Cart} />
        
           
       
